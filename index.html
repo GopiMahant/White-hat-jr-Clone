@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="Images/logo_whjr (1).png">
+    <title>Live Online Coding, Math and Music Classes for kids @whitehatjr</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        /* This is header */
+        .header {
+            width: 100%;
+            box-sizing: border-box;
+            height: 100px;
+        }
+
+
+
+        /* first 2 buttons */
+
+        .bheader {
+            width: 100%;
+        }
+
+        ul {
+            width: 100%;
+            float: left;
+            display: block;
+            list-style: none;
+            text-align: center;
+            font-size: 18px;
+            text-transform: capitalize;
+
+
+        }
+
+        ul li {
+            display: inline-block;
+            position: relative;
+
+
+        }
+
+        ul li a {
+            text-decoration: none;
+            padding: 20px 60px;
+            display: inline-block;
+            background-color: white;
+            color: rgb(76, 166, 184);
+
+        }
+
+        ul li ul.dropdown li {
+            display: block;
+        }
+
+        ul li ul.dropdown li a {
+            text-decoration: none;
+            padding: 20px 60px;
+            display: inline-block;
+            background-color: white;
+        }
+
+        ul li ul.dropdown {
+            display: none;
+            position: absolute;
+            width: 100%;
+        }
+
+        ul li a:hover {
+
+            color: rgb(0, 0, 0);
+        }
+
+        ul li ul.dropdown li a:hover {
+            color: rgb(255, 255, 255);
+            background-color: rgb(77, 175, 72);
+        }
+
+        ul li:hover ul.dropdown {
+            display: block;
+            width: 100%;
+        }
+
+        ol {
+            width: 100%;
+            float: left;
+            display: block;
+            list-style: none;
+            text-align: center;
+            font-size: 18px;
+            text-transform: capitalize;
+
+
+        }
+
+        ol li {
+            display: inline-block;
+            position: relative;
+
+
+        }
+
+        ol li a {
+            text-decoration: none;
+            padding: 20px 60px;
+            display: inline-block;
+            background-color: white;
+            color: rgb(76, 166, 184);
+
+        }
+
+        ol li ol.dropdown li {
+            display: block;
+        }
+
+        ol li ol.dropdown li a {
+            text-decoration: none;
+            width: 91.5%;
+            padding: 10px;
+            text-align: justify;
+            display: inline-block;
+            background-color: white;
+        }
+
+        ol li ol.dropdown li a small {
+            font-size: 18px;
+            margin-left: 15px;
+
+        }
+
+        ol li ol.dropdown {
+            display: none;
+            position: absolute;
+            width: 100%;
+        }
+
+        ol li a:hover {
+
+            color: rgb(0, 0, 0);
+        }
+
+        ol li ol.dropdown li a:hover {
+            color: rgb(255, 255, 255);
+            background-color: rgb(77, 175, 72);
+        }
+
+        ol li:hover ol.dropdown {
+            display: block;
+            width: 100%;
+        }
+
+        /* join class book a free trial button */
+        .button1 {
+            border: 2px solid rgb(255, 166, 0);
+            width: 200px;
+            height: 50px;
+            color: rgb(255, 166, 0);
+            font-size: 18px;
+            font-weight: bold;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .button2 {
+            width: 250px;
+            height: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgb(255, 166, 0);
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        .button3 {
+            width: 90%;
+            height: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgb(255, 166, 0);
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        .h1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 50px;
+        }
+
+        .cdiv {
+            float: left;
+            width: 500px;
+            box-sizing: border-box;
+            margin-left: 40px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border-radius: 12px;
+            height: 350px;
+            background-image: url();
+        }
+
+        table {
+            width: 90%;
+            margin-left: 5%;
+            margin-top: 10px;
+            border-collapse: collapse;
+
+        }
+
+        td {
+            padding: 10px;
+            cursor: pointer;
+            color: rgb(76, 166, 184);
+
+        }
+
+        td:hover {
+            background-color: rgb(255, 166, 0);
+            color: white;
+        }
+
+
+        .vdiv {
+            float: left;
+            width: 80%;
+            margin-left: 10%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-top: 50px;
+            box-sizing: border-box;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            height: 338px;
+            max-width:
+        }
+
+        .boxesdiv {
+            margin-top: 20px;
+            background-image: url(Images/musicbanner1x.png);
+            background-size: contain;
+            height: 500px;
+            background-size: cover;
+
+            width: 100%;
+
+            float: left;
+        }
+
+        .boxfit {
+            float: left;
+            width: 17.5%;
+            height: 340px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,
+                    0.19);
+            border-radius: 15px;
+            background-color: white;
+            margin-left: 2%;
+            margin-top: 50px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: width 0.5s, height 0.5s;
+
+        }
+
+        .buttonbox {
+            margin-top: 20px;
+            border-radius: 20px;
+            margin-left: 65px;
+            padding: 10px;
+            border: none;
+            font-size: 17px;
+            font-weight: bold;
+            /* background-color: rgb(241, 208, 147);
+            color: orange; */
+        }
+
+        .belowbuttonbox {
+            width: 80%;
+            margin-left: 25px;
+            height: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgb(255, 166, 0);
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        .cleafix {
+            overflow: auto;
+        }
+
+
+        .minecraft {
+            margin-top: 30px;
+            float: left;
+            width: 100%;
+            height: 290px;
+            background-image: url(Images/minecraft-banner-desktop.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+
+
+        .headingover {
+            float: left;
+            width: 100%;
+            margin-top: 50px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+        }
+
+        .marquee1 {
+            float: left;
+            width: 100%;
+            margin-top: 50px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+            height: 500px;
+
+        }
+
+        .layout {
+            width: 23%;
+            float: left;
+            margin-left: 20px;
+            box-sizing: border-box;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,
+                    0.19);
+            height: 400px;
+            padding: 10px;
+            max-width: fit-content;
+            
+
+
+
+        }
+
+        .codingkids {
+            float: left;
+            /* width: 100%; */
+            background-color: rgba(200, 199, 199, 0.3);
+            margin-top: 50px;
+            height: 1000px
+        }
+
+        /* This is for the video tag/ youtube video and transition*/
+        .clearfix1 {
+            overflow: hidden;
+            border-radius: 25px;
+        }
+
+
+
+        /* For the transition of shopping image beside video */
+
+        .c6 {
+            width: 560px;
+            height: 315px;
+            z-index: -1;
+            /* float: left; */
+            transition: width 2s, height 2s;
+        }
+
+        .c6:hover {
+            width: 600px;
+            height: 350px;
+        }
+
+        .vdiv2 {
+            background-image: url(https://www.whitehatjr.com/images/video-popup/saira-bg.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            float: left;
+            height: 500px;
+
+        }
+
+        .desc1 {
+            padding: 15px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .imagehover {
+            border-radius: 250px;
+
+        }
+
+        .imagehover:hover {
+            box-shadow: 0 4px 16px 0 rgba(255, 157, 0, 0.2), 0 6px 20px 0 rgba(255, 136, 0, 0.19);
+
+        }
+
+        .texthover {
+            text-decoration: none;
+            color: black;
+        }
+
+        .texthover:hover {
+            text-decoration: underline;
+        }
+
+        .boxfit:hover{
+            box-shadow: 0 4px 8px 0 rgba(250, 138, 1, 0.2), 0 6px 20px 0 rgba(250, 121, 1, 0.19); 
+            width: 17.7%;
+            height: 350px;
+        }
+        .logic{
+            border-radius: 50%;
+        }
+        .logic:hover{
+            width: 90px;
+            box-shadow: 0 4px 16px 0 rgba(250, 1, 1, 0.2), 0 6px 25px 0 rgba(250, 121, 1, 0.19);
+        }
+        
+        /* creating classes for respnsive */
+        .headerimage{
+            width: 250px;
+        }
+        .expertimage{
+            width: 30%;
+        }
+        .experttext{
+            width: 49%;
+        }
+
+        /* @media screen and(max-width: 700px) {
+            *{
+                float: none;
+                display: block;
+                height: auto;
+                width: auto;
+
+            }
+        } */
+
+        /* responsive for header */
+        @media screen and (max-width: 700px) {
+            .header{
+                width: 100%;
+                display: block;
+            }
+            
+            .header ul{
+                width: 100%;
+                display: block;
+            }
+            .header ul li 
+            {
+                width: 100%;
+                display: block;
+            }
+            .headerimage{
+                width: 100%;
+                height: auto;
+                display: flex;
+            }
+            .vdiv{
+                width: 100%;
+                display: block;
+            }
+            .boxesdiv{
+                height: auto;
+                width: auto;
+                display: flex;
+            }
+            .expertimage{
+                height: auto;
+                width: auto;
+                display: block;
+                float: none;
+            }
+            .experttext{
+                height: auto;
+                width: auto;
+                display: flex;
+                display: block;
+                float: none;
+            }
+            .marquee1{
+                display: flex;
+                height: auto;
+            }
+            .layout{
+                height: auto;
+                width: 100%;
+                display: flex;
+                text-align: justify;
+                box-sizing: border-box;
+                overflow-x: hidden;
+            }
+            .layout p{
+                text-align: justify;
+                text-align: center;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header" style="border: 2px solid white;">
+
+        <!-- white hat jr image on header -->
+        <div style="float: left; width: 20%;">
+
+            <a href="index.html"> <img src="https://s3-cdnwhjr.whjr.online/website/desktop/logo_whjr.png" alt=""
+                    height="70px" width="250px" style="padding: 10px 0 0 20px; float: left;" class="headerimage"></a>
+        </div>
+
+        <!-- curriculam bar -->
+        <div style="float: left;box-sizing: border-box;margin-top: 20px;box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);">
+            <ul>
+
+                <li><a href=""
+                        style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Curriculum
+                        + Pricing </a>
+                    <ul class="dropdown" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
+                        <li><a href="pay.html">Foundation level 1 (Grade 1-2)</a></li>
+                        <li><a href="pay.html">Foundation level 2 (Grade 3-4)</a></li>
+                        <li><a href="pay.html">Foundation level 1 (Grade 5)</a></li>
+                        <li><a href="pay.html">Mastery Level 4 (Grade 6-8)</a></li>
+                        <li><a href="pay.html">Professional Level 6 (Grade 9-12)</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!--Courses bar  -->
+        <div
+            style="float: left; box-sizing: border-box;margin-top: 20px;margin-left: 5%;box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);">
+            <ol style="list-style: none;">
+
+                <li><a href=""
+                        style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                        <small style="font-size: 18px; color: black;">Courses : </small><i
+                            style=" color: rgb(255 , 166 , 0);">Coding</i>
+
+                    </a>
+                    <ol class="dropdown" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
+                        <li><a href="pay.html"> <img src="Images/code.png" alt="" height="35px" width="40px"
+                                    style="float: left; "> <small>Coding</small> </a>
+                        </li>
+                        <li><a href="pay.html"><img src="Images/math.png" alt="" height="35px" width="40px"
+                                    style="float: left; "><small>Maths</small> </a></li>
+                        <li><a href="pay.html"><img src="Images/music.png" alt="" height="35px" width="40px"
+                                    style="float: left;"><small>Music(Kids)</small></a></li>
+                        <li><a href="pay.html"><img src="Images/music.png" alt="" height="35px" width="40px"
+                                    style="float: left;"><small>Music(Age 18+)</small></a></li>
+                        <li><a href="pay.html"><img src="Images/pallete.png" alt="" height="35px" width="40px"
+                                    style="float: left;"><small>Art ,Animation & video</small> </a></li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+
+        <!-- Join class button -->
+        <div style="float: left; width: 200px;box-sizing: border-box;margin-top: 30px;margin-left: 70px;">
+            <a href="booking.html"><button class="button1">
+                    Join Class Now
+                </button></a>
+        </div>
+
+        <!-- Book free trial button -->
+        <div style="float: left; width: 250px;box-sizing: border-box;margin-top: 30px; margin-left: 5px;">
+            <a href="booking.html"><button class="button2"><img src="Images/1579797_calendar_calender_date_icon.png"
+                        alt="" style="float: left;margin-left: 30px;">
+                    <p style="float: left;margin-top: 6px;"> Book A Free Trial</p>
+                </button></a>
+        </div>
+
+        <!-- Already book text -->
+        <div style="width: 20%; margin-left: 67%; margin-top: 83px;">
+            <p
+                style="font-size: 12px; color: rgb(255 , 166 , 0); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                Already booked a class?</p>
+        </div>
+    </div>
+
+
+
+
+    <!-- content -->
+
+    <div class="bheader">
+        <!-- Heading -->
+        <div style=" float: left;width: 100%; margin-top: 50px; margin-left: 40px;">
+            <h1 class="h1">
+                Your own personal teacher <br> live, Online Classes
+            </h1>
+        </div>
+
+        <div style="" class="cdiv">
+            <h3 style="text-align: center; margin-top: 10px;font-size: 22px;">Book your free class</h3>
+            <p style="font-size: 18px; text-align: center; margin-top: 20px;">For Students</p>
+            <p style="font-size: 15px; margin-left: 5%; margin-top: 10px; color: rgb(76, 166, 184);">Select your child's
+                grade / class in school</p>
+
+            <!-- grades table -->
+            <a href="booking.html" style="text-decoration: none; color: rgb(76, 166, 184);">
+                <table border="" style=" margin-left: 5%;text-align: center;">
+                    <tr>
+                        <td>class <br> 1</td>
+                        <td>class <br> 2</td>
+                        <td>class <br> 3</td>
+                        <td>class <br> 4</td>
+                        <td>class <br> 5</td>
+                        <td>class <br> 6</td>
+
+                    </tr>
+                    <tr>
+                        <td>class <br> 7</td>
+                        <td>class <br> 8</td>
+                        <td>class <br> 9</td>
+                        <td>class <br> 10</td>
+                        <td>class <br> 11</td>
+                        <td>class <br> 12</td>
+                    </tr>
+                </table>
+            </a>
+            <!-- schedule free trial button -->
+            <div style="float: left; width: 100%;box-sizing: border-box;margin-top: 30px; margin-left: 5%;">
+                <a href="booking.html"><button class="button3"><img src="Images/1579797_calendar_calender_date_icon.png"
+                            alt="" style="float: left;margin-left: 80px;">
+                        <p style="float: left;margin-top: 6px;font-size: 20px; margin-left: 10px;">Schedule A Free Trial
+                        </p>
+                    </button></a>
+            </div>
+
+
+        </div>
+
+
+
+
+        <!-- the kid image -->
+        <div style="float: left; width: 50%; box-sizing: border-box; margin-left: 10%;">
+            <img src="https://s3-cdnwhjr.whjr.online/website/desktop/master-banner-1x.png" alt="" height="400"
+                width="700">
+
+        </div>
+    </div>
+
+
+
+
+    <!-- video div -->
+    <div class="vdiv">
+        <div style="float: left;width: 49%; padding: 10px;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/A-F4rju-CjA?si=UsG3doG9bgZCZBn3"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <div style="float: left; width: 49%;">
+            <h1 style="margin-top: 10px;">
+                WhiteHat Jr is more than just coding, math and music!
+            </h1>
+            <p style="margin-top: 10px; font-size: 18px; padding: 10px;color: rgb(76, 166, 184);">Our proprietary,
+                activity-based curriculum with live, real-time instruction generates: Problem Solving.
+                Creative Thinking. Grit. Confidence. Communication.</p>
+            <p style="margin-top: 10px; font-size: 18px; padding: 10px;color: rgb(76, 166, 184);">
+                🎉 🎉 And it's a lot of fun, too!
+            </p>
+            <a href="booking.html"><button class="button3" style="margin-top: 30px;"><img
+                        src="Images/1579797_calendar_calender_date_icon.png" alt=""
+                        style="float: left;margin-left: 80px;">
+                    <p style="float: left;margin-top: 6px;font-size: 20px; margin-left: 50px;">Schedule A Free Trial
+                    </p>
+                </button></a>
+        </div>
+    </div>
+
+
+
+
+    <!-- our courses -->
+    <div class="boxesdiv ">
+        <h1 style="font-weight: bolder;color: rgb(128, 38, 246);text-align: center; margin-top: 20px;">OUR COURSES</h1>
+        <!-- box 1 -->
+        <div class="boxfit">
+            <img src="Images/card1-user.png" alt="" height="150px" width="200px"
+                style="float: left; margin-left: 30px;">
+            <h1 style="text-align: center;font-size: 18px;">Learn Coding</h1>
+            <button class="buttonbox" style="background-color: rgba(255, 119, 0, 0.2);color: rgb(255 , 166 , 0);">For
+                Grade 1-12</button>
+            <a href="booking.html"><button class="belowbuttonbox" style="margin-top: 20px;">
+                    <p style="float: left;font-size: 15px;margin-left: 15px;">Book A Free Coding Class
+                    </p>
+                </button></a>
+
+        </div>
+
+
+        <!-- box 2 -->
+        <div class="boxfit">
+            <img src="Images/card2-user.png" alt="" height="150px" width="200px"
+                style="float: left; margin-left: 30px;">
+            <h1 style="text-align: center;font-size: 18px;">Learn Math</h1>
+            <button class="buttonbox" style="background-color: rgba(208, 0, 255, 0.2);color: rgb(128, 38, 246);">For
+                Grade 1-8</button>
+            <a href="booking.html"><button class="belowbuttonbox" style="margin-top: 20px;">
+                    <p style="float: left;font-size: 15px;margin-left: 20px;">Book A Free Math Class
+                    </p>
+                </button></a>
+
+        </div>
+
+        <div class="boxfit">
+            <img src="Images/card3-user.png" alt="" height="150px" width="200px"
+                style="float: left; margin-left: 30px;">
+            <h1 style="text-align: center;font-size: 18px;">Learn Music</h1>
+            <button class="buttonbox" style="background-color: rgba(208, 0, 255, 0.2);color: rgb(128, 38, 246);">For
+                Grade 1-12</button>
+            <a href="booking.html"><button class="belowbuttonbox" style="margin-top: 20px;">
+                    <p style="float: left;font-size: 15px;margin-left: 20px;">Book A Free Music Class
+                    </p>
+                </button></a>
+
+        </div>
+
+        <div class="boxfit">
+            <img src="Images/music_for_adults.png" alt="" height="150px" width="200px"
+                style="float: left; margin-left: 30px;">
+            <h1 style="text-align: center;font-size: 18px;">Music for Adults</h1>
+            <button class="buttonbox"
+                style="background-color: rgba(0, 146, 250,0.2);color: rgb(0, 204, 255); margin-left: 85px;">Age
+                18+</button>
+            <a href="booking.html"><button class="belowbuttonbox" style="margin-top: 20px;">
+                    <p style="float: left;font-size: 15px;margin-left: 20px;">Book A Free Music Class
+                    </p>
+                </button></a>
+
+        </div>
+
+        <div class="boxfit">
+            <img src="Images/art-course.png" alt="" height="150px" width="200px"
+                style="float: left; margin-left: 30px;">
+            <h1 style="text-align: center;font-size: 18px;">Learn Art, Animation & Video</h1>
+            <button class="buttonbox" style="background-color: rgb(148, 207, 250);color: rgb(0, 119, 148);">For Grade
+                3-7</button>
+            <a href="booking.html"><button class="belowbuttonbox" style="margin-top: 20px;">
+                    <p style="float: left;font-size: 15px;margin-left: px;">Book A Free Art & Animation Class
+                    </p>
+                </button></a>
+
+        </div>
+    </div>
+
+
+
+    <!-- Minecraft  -->
+    <div class="minecraft">
+        <a href="https://code.whitehatjr.com/coding/minecraft/trial/register?utm_source=website&utm_content=website&utm_medium=website" target="_blank" style="color: white;"><button class="belowbuttonbox"
+                style="margin-top: 200px; width: 500px;margin-left: 38%;">
+                <p style="float: left;font-size: 15px;margin-left: 150px;">Book A Free Coding Class
+                </p>
+            </button></a>
+    </div>
+
+
+
+    <!-- The marquee of images -->
+    <div class="headingover">
+
+        <h1 style="text-align: center;">
+            Join 1 million+ students worldwide,
+            certified by WhiteHat Jr
+        </h1>
+    </div>
+
+    <div class="marquee1">
+
+        <marquee behavior="" direction="left" scrollamount="20" height="410px" loop="10000">
+            <div class="layout">
+                <img src="https://s3-cdnwhjr.whjr.online/website/desktop/social-cards/roy-jr-1x.jpg" alt=""
+                    height="250px" width="100%">
+                <h3 style="margin-top: 20px;">Roy Nunez</h3>
+                <p style="margin-top: 20px;">Roy built an Air Hockey Battle app that <br> allows you to play Air Hockey
+                    on your phone.</p>
+            </div>
+            <div class="layout">
+                <img src="https://s3-cdnwhjr.whjr.online/website/desktop/social-cards/dhruva-1x.png" alt=""
+                    height="250px" width="100%">
+                <h3 style="margin-top: 20px;">Dhurva Shah Age-13, Class 8</h3>
+                <p style="margin-top: 20px;">Dhruva created a Space Shooter Game which <br> resembles outer space</p>
+            </div>
+            <div class="layout">
+                <img src="https://s3-cdnwhjr.whjr.online/website/desktop/social-cards/anthony-watkins-1x.jpg" alt=""
+                    height="250px" width="100%">
+                <h3 style="margin-top: 20px;">Anthony Watkins</h3>
+                <p style="margin-top: 20px;">Anthony built Control the Drone app that <br>allows him to maneuver his own
+                    drone</p>
+            </div>
+            <div class="layout">
+                <img src="https://s3-cdnwhjr.whjr.online/website/desktop/social-cards/shridhar-1x.png" alt=""
+                    height="250px" width="100%">
+                <h3 style="margin-top: 20px;">Shridhar Shrivastav Age-13, Clas 8</h3>
+                <p style="margin-top: 20px;">Shridhar built a Bubble Shooting Game which <br>allows players to shoot and
+                    win over enemies</p>
+            </div>
+        </marquee>
+
+
+        <div class="marquee1">
+
+            <marquee behavior="" direction="right" scrollamount="20" height="410px" loop="10000">
+                <div class="layout">
+                    <img src="https://s3-cdnwhjr.whjr.online/website/desktop/social-cards/skandini-1x.png" alt=""
+                        height="250px" width="100%">
+                    <h3 style="margin-top: 20px;">Skandini Nandan Age-13, Class 8</h3>
+                    <p style="margin-top: 20px;">Skandini B built an Origami Website which <br> explains step by step
+                        method to create</p>
+                </div>
+                <div class="layout">
+                    <img src="https://s3-cdnwhjr.whjr.online/website/desktop/social-cards/christian-sheeder-1x.jpg"
+                        alt="" height="250px" width="100%">
+                    <h3 style="margin-top: 20px;">Christian Sheeder</h3>
+                    <p style="margin-top: 20px;">Christian developed Polio Vaccine Calculator <br> app to keep a tab on
+                        vaccines required for kids</p>
+                </div>
+                <div class="layout">
+                    <img src="https://s3-cdnwhjr.whjr.online/website/desktop/social-cards/shreya-1x.png" alt=""
+                        height="250px" width="100%">
+                    <h3 style="margin-top: 20px;">Shreya Kathare Age-11, Class 5</h3>
+                    <p style="margin-top: 20px;">Shreya developed a school website which <br>effectively communicated
+                        the school's vision <br> and mission.
+                    </p>
+                </div>
+                <div class="layout">
+                    <img src="https://s3-cdnwhjr.whjr.online/website/desktop/social-cards/kiara-1x.png" alt=""
+                        height="250px" width="100%">
+                    <h3 style="margin-top: 20px;">Kiara Bhandari</h3>
+                    <p style="margin-top: 20px;">Kiara built a Restaurant application which <br> allows restaurant for
+                        billings</p>
+                </div>
+            </marquee>
+
+
+
+        </div>
+
+        <!-- button below images -->
+        <div>
+            <a href="booking.html" style="text-decoration: none;color: white;"><button class="belowbuttonbox" style="margin-top: px; width: 500px;margin-left: 35%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,
+                    0.19);">
+                    <p style="float: left;font-size: 15px;margin-left: 150px;">Book A Free Coding Class
+                    </p>
+                </button></a>
+        </div>
+        <!-- Why coding for kids -->
+        <div class="codingkids">
+            <h1 style="text-align: center; margin-top: 30px;">
+                Why Coding for Kids?
+            </h1>
+            <div style="  float: left;margin-left: 15%; margin-top: 50px;">
+                <img src="Images/white hat jr chart.jpg" alt="" style="float: left; height: 400px; width: 400px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,
+            0.19);">
+            </div>
+            <div style="width: 40%;float: left; margin-top: 50px;margin-left: 5%; padding: 10px;">
+                <h3 style="font-size: 25px;font-weight: bolder;padding-left: 20px;">Your kids can learn logic,
+                    structure,<br> sequence and
+                    creative expression</h3>
+                <p style="margin-top: 60px;color: rgb(74, 76, 76);font-size: 19px;padding-left: 20px;">George Land &
+                    Beth Jarman's
+                    landmark NASA study identified that kids
+                    peak in creativity at age 6, followed by a gradual decline as they
+                    grow up.
+                    <br>
+                    <br>
+
+                    The real promise of coding is not that kids will become computer engineers.
+                    Coding is a fun tool for kids to exercise their desire to build,
+                    curiosity to question, imagination to explore - the traits that will serve any child
+                    well in nearly any career, in every hobby, and in life.
+                </p>
+
+                <a href="booking.html" style="text-decoration: none;color: white;"><button class="belowbuttonbox" style="margin-top:40px; width: 300px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,
+                        0.19);left: 0   ;">
+                        <p style="float: left;font-size: 15px;margin-left: 55px;">Book A Free Coding Class
+                        </p>
+                    </button></a>
+
+            </div>
+
+
+            <!-- your child will learn div -->
+            <div style="float: left;width: 80%;margin-left: 12%;background-color: white;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,
+            0.19); margin-top: 50px; height: 300px;">
+                <h1 style="text-align: center; margin-top: 30px;">Your Child will Learn</h1>
+                <div style="float: left;margin-top: 50px;margin-left:20%;">
+                    <div style=" width: 80px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,
+            0.19);padding: 10px; " class="logic">
+                        <img src="Images/logic.png" alt="" height="70px" width="70px" style="margin-left: 5px;">
+
+                    </div>
+                    <div>
+                        <br>
+                        <p style="text-align: center;">Logic</p>
+                    </div>
+                </div>
+
+
+                <div style="float: left;margin-top: 50px;margin-left:10%;">
+                    <div style="border-radius: 50%; width: 80px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,
+            0.19);padding: 10px; " class="cleafix logic">
+                        <img src="Images/database.png" alt="" height="70px" width="70px" style="margin-left: 5px;">
+
+                    </div>
+                    <div>
+                        <br>
+                        <p style="margin-left: 20px;">Structure</p>
+                    </div>
+                </div>
+
+                <div style="float: left;margin-top: 50px;margin-left:10%;">
+                    <div style="border-radius: 50%; width: 80px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,
+            0.19);padding: 10px; " class="cleafix logic">
+                        <img src="Images/bulb.png" alt="" height="70px" width="70px" style="margin-left: 5px;">
+
+                    </div>
+                    <div>
+                        <br>
+                        <p>Creativie Thinking</p>
+                    </div>
+                </div>
+
+                <div style="float: left;margin-top: 50px;margin-left:10%;">
+                    <div style="border-radius: 50%; width: 80px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,
+            0.19);padding: 10px; " class="cleafix logic">
+                        <img src="Images/cube.png" alt="" height="70px" width="70px" style="margin-left: 5px;">
+
+                    </div>
+                    <div>
+                        <br>
+                        <p style="text-align: center;">Sequencing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div style="float: left;">
+            <!-- Video -->
+            <div class="clearfix1"
+                style="float: left; width: 560px; height: 315px; margin-left: 10px; margin-top: 10px; ">
+                <video autoplay muted loop controls height="315px" width="560px">
+                    <source src="Videos/What Is 'Create With Math' And How Does It Work_ _ WhiteHat Jr.mp4">
+                </video>
+
+            </div>
+
+
+
+            <!-- transition -->
+            <div class="clearfix1" style="height: 315px; width: 560px;float: left;margin-left: 10px; margin-top: 10px;">
+                <a href="booking.html">
+                    <h2
+                        style="color: white;margin-top: 30px; margin-left: 50px;position: absolute; font-size: 30px;z-index: 1;text-shadow: 2px 2px 2px black;">
+                        Get into Maths Class</h2>
+                </a>
+                <a href="booking.html"><b>
+                        <p style="color: white;margin-top: 200px; margin-left: 50px;position: absolute; font-size: 30px;border-radius: 25px;border: 2px solid white; padding: 5px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,
+                            0.19);">
+                            Book Now</p>
+                    </b></a>
+                <a href=""><img class="c6" style="z-index: -1;"
+                        src="https://www.whitehatjr.com/maths/media/math-banner/thumbnail-1x.png" alt=""></a>
+            </div>
+
+
+
+            <!-- The green box -->
+            <div class="clearfix1"
+                style="float: right; width: 350px; height: 315px; margin-right: 10px; margin-top: 10px; background-color: rgb(144, 197, 144);">
+                <a href="booking.html" style="text-decoration: none;">
+                    <h2
+                        style="text-align: center;color: white;margin-top: 85px;font-size:40px;text-shadow: 1px 1px 2px black;">
+                        Make your Child Math Confident for life
+                    </h2>
+                </a>
+            </div>
+
+
+            <!-- Iframe youtube video -->
+
+            <div class="clearfix1"
+                style="float: right; width: 560px; height: 315px; margin-right: 10px; margin-top: 10px; ">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/xlwjqPl2d_c?si=xNb91DfVAesFXZe-"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+
+
+
+
+            <!-- transition image 2 -->
+            <div class="clearfix1"
+                style="height: 315px; width: 560px;float: right;margin-right: 10px; margin-top: 10px;">
+                <a href="booking.html">
+                    <h2
+                        style="color: rgb(254, 64, 1); margin-top: 30px; margin-left: 50px;position: absolute; font-size: 30px; text-shadow: 2px 2px 2px black;">
+                        Ace concepts of mathematics <br>with personalized learning</h2>
+                </a>
+                <a href="booking.html"><b>
+                        <p style="color: white;margin-top: 200px; margin-left: 50px;position: absolute; font-size: 30px;border-radius: 25px;border: 2px solid white; padding: 5px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,
+                            0.19);">
+                            Book Math trial</p>
+                    </b></a>
+                <a href="booking.html"><img class="c6" src="Images/mathbg1x.png" alt=""></a>
+            </div>
+
+
+            <!-- The red box -->
+            <div class="clearfix1"
+                style="float: right; width: 350px; height: 315px; margin-right: 10px; margin-top: 10px; background-color: rgb(238, 147, 90);">
+                <a href="" style="text-decoration: none;">
+                    <h2
+                        style="text-align: center;color: white;margin-top: 100px;font-size:40px;text-shadow: 1px 1px 2px black;">
+                        52 Classes <br> currently
+                    </h2>
+                </a>
+            </div>
+        </div>
+
+        <div class="vdiv2" style="margin-top: 40px;">
+            <a href="https://www.youtube.com/watch?v=cd14BcYq-GQ&ab_channel=WhiteHatJr" target="_blank"> <img
+                    src="Images/play button.png" alt="" height="70px" width="70px"
+                    style="float: left; margin-left: 40%; margin-top: 200px;"></a>
+            <h1 style="text-align: end;margin-top: 50px;font-size: 40px;color: white; margin-right: 20%;">Saira’s video,
+                Age 9,<br>
+                WhiteHat Jr Coder</h1>
+            <p style="color: white; margin-right: 20%;text-align: end;margin-top: 100px;">
+                Watch how coding with WhiteHat Jr helped Saira <br> get better at Math.</p>
+
+            <a href="booking.html" style="text-decoration: none;color: white;"><button class="belowbuttonbox" style="margin-top:50px; width: 300px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,
+                        0.19); float: right;margin-right: 20%;">
+                    <p style="float: left;font-size: 15px;margin-left: 55px;">Book A Free Math Class
+                    </p>
+                </button></a>
+
+
+
+
+        </div>
+
+        <!-- Our Expert Educators -->
+        <div style="width: 100%; float: left; margin-top: 50px;">
+            <div style="width: 100%; margin-top: 30px;">
+                <h1 style="text-align: center;">Our Expert Educators</h1>
+            </div>
+            <div style="float: left; width: 30%; margin-top: 50px; margin-left: 10%;" class="experimage">
+                <img src="https://s3-cdnwhjr.whjr.online/website/desktop/teacher-process-2x.png" alt="" height="250px"
+                    width="450px">
+            </div>
+            <div
+                style="float: left; width: 49%;margin-top: 50px;margin-left: 10px; padding: 10px; box-sizing: border-box;" class="experttext">
+                <h3>Top 1% teachers selected by an industry-leading 4-step teacher assessment process by top 1% of early
+                    childhood coding experts</h3>
+                <br>
+
+                <p>WhiteHat Jr follows a rigorous 4-Step Selection Process for confirming teacher</p>
+                <p>candidates so your children are taught by the Top Early Childhood Coding Experts.</p>
+                <a href="booking.html" style="text-decoration: none;color: white;"><button class="belowbuttonbox" style="margin-top:50px; width: 300px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,
+                        0.19); margin-left: 2px;">
+                        <p style="float: left;font-size: 15px;margin-left: 55px;">Book A Free Math Class
+                        </p>
+                    </button></a>
+
+            </div>
+        </div>
+
+        <div style="width: 100%; float: left; margin-top: 50px;">
+            <div style="width: 100%; margin-top: 30px;">
+                <h1 style="text-align: center;">Meet our IIT and IB-trained Curriculum Creators</h1>
+            </div>
+            <div style="float: left; width: 80%; margin-left: 10%;margin-top: 50px;">
+                <div style="float: left;">
+                    <img src="https://s3-cdnwhjr.whjr.online/website/desktop/our-curriculum/profile/farida.png" alt=""
+                        height="250px" width="250px" class="imagehover">
+                    <div class="desc1">
+                        <p> <b>Dr. Farida Khan</b></p>
+                        <p>PHD IITB, Gold Medalist</p>
+                    </div>
+                </div>
+
+                <div style="float: left; margin-left: 50px;">
+                    <img src="  https://s3-cdnwhjr.whjr.online/website/desktop/our-curriculum/profile/rajeev.png" alt=""
+                        height="250px" width="250px" class="imagehover">
+                    <div class="desc1">
+                        <p><b>Rajeev Jha</b></p>
+                        <p>Advanced Game Designer,<br> TFI Fellow.</p>
+                    </div>
+                </div>
+
+                <div style="float: left; margin-left: 60px;">
+                    <img src="https://s3-cdnwhjr.whjr.online/website/desktop/our-curriculum/profile/abhijit.png" alt=""
+                        height="250px" width="250px" class="imagehover">
+                    <div class="desc1">
+                        <p> <b>Abhijeet Gawande</b></p>
+                        <p>IB Educational Technologist, <br>AI Expert</p>
+                    </div>
+                </div>
+
+                <div style="float: left; margin-left: 60px;">
+                    <img src="https://s3-cdnwhjr.whjr.online/website/desktop/our-curriculum/profile/gauri.png" alt=""
+                        height="250px" width="250px" class="imagehover">
+                    <div class="desc1">
+                        <p><b>Gauri Parulkar</b></p>
+                        <p>Computer Scientist, <br>Entrepreneur, Science Quotient</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div style="background-color: rgba(200, 199, 199, 0.3);width: 100%;float: left; margin-top: 50px;">
+            <div style="width: 80%; float: left;margin-left: 10%;">
+                <div style="width: 40%;float: left;box-sizing: border-box;">
+                    <img src="Images/logo_whjr.png" alt="" height="100px" width="400px">
+                    <p style="margin-top: 50px; text-align: justify;">Do you want your child to create the world’s next
+                        big tech platform? WhiteHat Jr's mission is to
+                        empower a whole generation to become creators versus consumers of technology. We teach
+                        fundamentals of coding--logic, structure, sequence and algorithmic thinking to enable kids to
+                        generate creative outcomes like websites, animations and apps.</p>
+                </div>
+                <div style="width: 25%;float: left;box-sizing: border-box;margin-left: 5%;margin-top:150px ;">
+                    <h3>Important links</h3><br>
+                    <p><a href="https://code.whitehatjr.com/t/login" class="texthover">Teacher login</a></p><br>
+                    <p><a href="https://code.whitehatjr.com/s/login" class="texthover"> Student Login </a></p><br>
+                    <p><a href="booking.html" class="texthover">Register</a></p><br>
+                    <p><a href="https://www.whitehatjr.com/space-explorer-program" class="texthover">Space Explorer
+                            Program</a></p><br>
+                    <p><a href="https://www.byjusfutureschool.com/?_gl=1*kiz400*_gcl_au*MjcyNTQ0NjE3LjE2OTU2NjMzOTI."
+                            class="texthover">BYJU's Future School</a></p>
+                </div>
+                <div style="width: 25%;float: left;box-sizing: border-box;margin-left: 5%;margin-top:150px ;">
+                    <h3>More</h3><br>
+                    <p><a href="terms and condition.html" class="texthover">Terms and Conditions</a></p><br>
+                    <p><a href="terms and condition.html" class="texthover"> Privacy Policy </a></p><br>
+                    <p><a href="https://www.whitehatjr.com/complaint-redressal" class="texthover">Complaint
+                            Redressal</a></p><br>
+                    <p><a href="https://www.whitehatjr.com/fulfillment-refund-policy" class="texthover">Fullfillment
+                            Policy</a></p><br>
+                    <p><a href="https://www.whitehatjr.com/help-desk" class="texthover">Help Desk</a></p>
+                </div>
+
+                <div style="float: left;width: 100%; margin-top: 50px;">
+                    <h1 style="color: rgb(62, 45, 97); font-size: 20px;margin-top: 20px;">About WhiteHat Jr</h1><br>
+                    <p style="text-align: justify;">Today, in the computer age, not all schools teach coding in early
+                        childhood resulting in a major
+                        gap in the requirements of the new world and our children's skills. WhiteHat Jr introduces and
+                        prepares your child from 6-18 years for this new coding world. They learn fundamentals of
+                        coding--logic, structure, sequence and algorithmic thinking--to generate creative outcomes like
+                        animations and apps. All classes are taught Live 1:1 Online in the comfort of your home by Top
+                        1% selected teachers and subject matter experts.</p>
+                    <h1 style="color: rgb(62, 45, 97); font-size: 20px;margin-top: 20px;">Coding For Kids</h1><br>
+                    <p style="text-align: justify;">Whether you are a student interested in the IT careers that you
+                        could explore with a coding qualification or just fascinated by the world of tech and coding
+                        courses, WhiteHat Jr offers a wide range of online coding courses that make coding accessible to
+                        kids and young teenagers. We've put together a simple guide to answer some of the most commonly
+                        asked questions from parents and prospective students to help you understand the basics of what
+                        our kids programming courses cover, whether they are right for your child and how best to
+                        navigate them.</p>
+                    <h1 style="color: rgb(62, 45, 97); font-size: 20px;margin-top: 20px;">Curious about what is involved
+                        in courses for coding for kids?</h1><br>
+                    <p style="text-align: justify;">We have developed kids programming courses that allow kids, teens,
+                        and young adults to learn how to code at all ages with proper coding classes and in an
+                        environment that works for them – Online. The courses offered by WhiteHat Jr are designed to
+                        teach kids to code with core programming skills, and then improve the proficiency of the kids
+                        coding languages. Our facilitators align digital literacy into coding courses, as required by
+                        the existing skills of the learners. Since our curriculum is developed by industry experts and
+                        the most important activity of teaching coding is done by top 1% selected teachers, learners get
+                        state of the art education through our propriety, creative activity based curriculum.</p>
+
+                    <h1 style="color: rgb(62, 45, 97); font-size: 20px;margin-top: 20px;">Are coding classes for kids
+                        suitable?</h1><br>
+                    <p style="text-align: justify;">When you're a parent exploring the possibilities that coding classes
+                        for kids can bring, you 're probably wondering whether coding courses will suit your child. The
+                        benefits of learning to code courses extend far beyond future job opportunities. WhiteHat Jr
+                        teaches coding for kids in programs designed to stimulate creativity, problem-solving skills,
+                        and academic performance overall. Over the longer term, online coding courses are a great way to
+                        train learners for an increasingly tech-oriented world.</p>
+
+                    <h1 style="color: rgb(62, 45, 97); font-size: 20px;margin-top: 20px;">Start to learn coding with
+                        us!?</h1><br>
+                    <p style="text-align: justify;">If you are a motivated parent and passionate about technology and
+                        where it can lead you to, then Join now. If you or your child would like to find out more about
+                        the opportunities provided by our coding programs, explore the kids programming courses offered
+                        by WhiteHat Jr and consider enrolling for a free trial. Remember, no coding experience
+                        beforehand is required.</p>
+                </div>
+
+                <hr style="margin-top: 50px; float: left; width: 100%;">
+                <p style="margin-top: 50px; float: left;">Copyright WhiteHat Education Technology Pvt ltd © 2022. All Rights Reserved</p>
+                <p style="margin-top:50px ; float: right;">Made with ❤️ in India</p>
+                <hr style="margin-top: 50px; float: left; width: 100%;">
+            </div>
+
+        </div>
+
+
+</body>
+
+</html>
